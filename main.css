@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ 1.use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*allow percentage-based heights in the application*/
+html, body {
+  height: 100%;
+}
+
+/* typographic tweaks!
+add accessible line-height
+improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialised;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p.h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c5e4e7;
+}
+
+.calculator-container {
+  background-color: white;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Bill {
+  background-image: url("images/icon-dollar.svg");
+  background-position: left;
+}
+
+#nop {
+  background-image: url(images/icon-person.svg);
+}
+
+.calc-2 {
+  background-color: #00494d;
+  border: 1px solid #00494d;
+  border-radius: 0.5em;
+}
+/*# sourceMappingURL=main.css.map */
