@@ -1,0 +1,281 @@
+ //  /*
+ //  1.use a more-intuitive box-sizing model */
+ //  *,
+ //  *::before,
+ //  *::after {
+ //      box-sizing: border-box;
+ //  }
+
+ //  /*allow percentage-based heights in the application*/
+ //  html,
+ //  body {
+ //      height: 100%;
+ //  }
+
+ //  /* typographic tweaks!
+ // add accessible line-height
+ // improve text rendering
+ // */
+ //  body {
+ //      line-height: 1.5;
+ //      -webkit-font-smoothing: antialised;
+
+ //  }
+
+ //  // improve media fonts
+ //  picture,
+ //  video,
+ //  canvas,
+ //  svg {
+ //      display: block;
+ //      max-width: 100%;
+ //  }
+
+ //  // remove inbuilt typography styles
+ //  input,
+ //  button,
+ //  textarea,
+ //  select {
+ //      font: inherit;
+ //  }
+
+ //  // avoid text overflows
+ //  p.h1,
+ //  h2,
+ //  h3,
+ //  h4,
+ //  h5,
+ //  h6 {
+ //      overflow-wrap: break-word;
+ //  }
+
+ //  // create a root stacking context
+ //  #root,
+ //  #__next {
+ //      isolation: isolate;
+ //  }
+
+ body {
+     font-family: 'Space Mono', monospace;
+     font-weight: 800px;
+     // display: flex;
+     //  align-items: center;
+     //  justify-content: center;
+     background-color: hsl(185, 41%, 84%);
+     font-size: 24px;
+     overflow: hidden;
+    
+
+ }
+
+ .calculator-container {
+     background: hsl(0, 0%, 100%);
+     padding-top: 40px;
+     padding-bottom: 40px;
+     //padding-top: 20px;
+     border-radius: 1em;
+     display: flex;
+      //justify-content: center;
+    //align-items: center;
+     //  gap: 0.5rem;
+      flex-direction: row;
+
+        justify-content: space-around;
+   // border: 10px solid black;
+     
+    
+
+ }
+
+ form,
+ fieldset {
+     border: none;
+ }
+
+ .calc-1 {
+     width: 40%;
+
+     b {
+         font-size: 14px;
+         color: gray;
+     }
+
+     input {
+         border: none;
+         background: hsl(189, 41%, 97%);
+         height: 30px;
+         width: 100%;
+         border-radius: 5px;
+         margin-top: 5px;
+        text-align: right;
+     }
+
+
+     .dollar-sign {
+         position: relative;
+     }
+
+     .dollar-sign.left input {
+         padding-left: 18px;
+     }
+
+     .dollar-sign:before {
+         position: absolute;
+         top: 0;
+         content: url("../images/icon-dollar.svg");
+     }
+
+     .dollar-sign.left:before {
+         left: 5px;
+     }
+
+     .select-tip {
+         margin-top: 20px;
+     }
+
+     .percentage-holder {
+         width: 30%;
+         padding: 10px;
+         height: 10%;
+         font-size: 24px;
+         background-color: hsl(183, 100%, 15%);
+         color:  hsl(0, 0%, 100%);
+         border-radius: 5px;
+         margin: 5px;
+         text-align: center;
+         
+     }
+
+     .flex-percent {
+         display: flex;
+        flex-wrap: wrap;
+     }
+ }
+
+//  .calc-2 {
+//      background-color: hsl(183, 100%, 15%);
+//      border: 1px solid hsl(183, 100%, 15%);
+//      border-radius: 0.5em;
+//      border: 5px solid red;
+//      padding: 20px;
+//  }
+
+ 
+
+ .content {
+     max-width: 960px;
+     margin: auto;
+ }
+
+ .logo {
+     text-align: center;
+     width: 100%;
+     margin: 3rem;
+ }
+.custom{
+    background: hsl(189, 41%, 97%);
+    color:hsl(183, 100%, 15%);
+    margin: 5px;
+    border: none;
+   border-radius: 5px;
+   font-weight: 800;
+   font-size: bold;
+    
+    input{
+        text-align: center;
+        border: none;
+        width: 100px;
+        font-size: 24px;
+       
+        
+    }
+ }
+ .icon-person  {
+    position: relative;
+}
+
+.icon-person.left input {
+    padding-left: 18px;
+}
+
+.icon-person:before {
+    position: absolute;
+    top: 0;
+    content: url("../images/icon-person.svg");
+}
+
+.icon-person.left:before {
+    left: 5px;
+}
+.number-of-people{
+    margin-top: 50px;
+}
+.calc-2{
+    
+    background-color: hsl(183, 100%, 15%);
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    
+    .tip-amount{
+        display: flex;
+        justify-content: space-between;
+    //margin-bottom:50px;
+        
+    }
+    p{
+        color:    hsl(172, 67%, 45%) ;
+        
+    
+    }
+    .total{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    
+    }
+    #reset{
+        background-color:   hsl(172, 67%, 45%) ;
+        
+        
+        color:  hsl(183, 100%, 15%) ;
+        text-align: center;
+        padding:10px;
+        width: 100%;
+        margin-top: 50px;
+        border-radius:10px ;
+        //margin-bottom: 20px;
+       font-size: 24px;
+       text-transform: uppercase;
+       
+       font-weight: 800;
+    }
+}
+label{
+    color: hsl(189, 41%, 97%);
+}
+b{
+    color:  hwb(186 37% 51%) ;
+    padding-right: 5px;
+    
+}
+span{
+    font-size: 50px;
+    font-weight: 800;
+    
+}
+
+
+img{
+    
+    color:hsl(172, 67%, 45%) ;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
