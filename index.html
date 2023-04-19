@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="content">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+
+    <div class="calculator-container">
+      <div class="calc-1">
+        
+          <b>Bills</b><br/>
+          <span class="dollar-sign left">
+            <input type="number" value="0">
+          </span>
+    
+        
+        <!-- <div class="select-tip">
+          <b>Select Tip %</b><br/>
+          <div class="flex-percent">
+            <button class="percentage-holder">
+              5%
+            </button>
+            <button class="percentage-holder">
+              10%
+            </button>
+            <button class="percentage-holder">
+              15%
+            </button><br>
+            <button class="percentage-holder">
+              25%
+            </button>
+            <button class="percentage-holder">
+              50%
+            </button>
+            <button class="custom">
+              <input type="number" placeholder="custom" value="custom">
+            
+            </button> -->
+            
+            <form action=""> 
+               <fieldset class="flex-percent" >
+                <legend class="select-tip">select tip%</legend>
+            <input type="radio" name="5%" id="5%" value="5%"  >
+            <label for="5%"  class="percentage-holder">5%</label>
+            <input type="radio" name="10%" id="10%" value="10%" >
+            <label for="10%"  class="percentage-holder">10%</label>
+            <input type="radio" name="15%" id="15%" value="15%"  >
+            <label for="15%"  class="percentage-holder">15%</label>
+            <input type="radio" name="25%" id="25%" value="25%"  >
+            <label for="25%"  class="percentage-holder">25%</label>
+            <input type="radio" name="50%" id="50%" value="50%" >
+            <label for="50%"  class="percentage-holder">50%</label>
+            <input type="radio" name="custom" id="custom" value="custom">
+            <label for="custom" class="percentage-holder">custom</label>
+              
+          
+          </fieldset>
+          </form>
+
+          
+          
+          
+          <div class="number-of-people">
+          <b>number of people</b><br>
+          <span class="icon-person left">
+            <input type="number" value="0">
+          </span>
+        </div>
+        </div>
+        
+        
+      
+  <div class="calc-2">
+    <div>
+     <div class="tip-amount">
+       <p><label>Tip Amount</label><br><b>/person</b></p> <p><span>$0.00</span></p>  
+    </div>
+    <div class="total">
+      <p><label>Total</label><br><b>/person</b></p> <p><span>$0.00</span></p>  
+    </div>
+    </div>
+     <input type="reset" name="reset" id="reset">
+     
+  </div> 
+        
+</div>
+      
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">ifeanyi presley</a>.
+    </div>
+    </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ifeanyi presley</a>.
+  </div> -->
+</body>
+<script src="script.js"></script>
+
+</html>
